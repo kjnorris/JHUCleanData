@@ -10,4 +10,5 @@ vignettes/*.html
 vignettes/*.pdf
 .Rproj.user
 # all Data files
-./Data/*
+Data/
+.RData
