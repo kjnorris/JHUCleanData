@@ -1,6 +1,5 @@
 # Load useful libraries
 library(dplyr)
-library(Hmisc)
 
 # Load the feature names and assign them to a vector
 myDir <- paste(getwd(), "Data", sep = "/")
@@ -9,9 +8,9 @@ featureList <- read.csv(paste(myDir, "features.txt", sep = "/"),
                         col.names = c("ID", "Feature"),
                         stringsAsFactors = FALSE)
 featureNames <- unlist(featureList$Feature)
-textWidth <- rep(16, times = 561)
 
 # Read the training data
+textWidth <- rep(16, times = 561)
 trainDir <- paste(myDir, "train", sep ="/")
 trainX <- read.fwf(paste(trainDir, "X_train.txt", sep = "/"),
                    widths = textWidth, header = FALSE,
