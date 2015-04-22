@@ -12,3 +12,4 @@ vignettes/*.pdf
 # all Data files
 Data/
 .RData
+JHUCleanData.Rproj
