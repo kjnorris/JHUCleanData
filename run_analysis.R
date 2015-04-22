@@ -1,6 +1,10 @@
+# Load useful libraries
+library(dplyr)
+library(Hmisc)
+
 # Load the feature names and assign them to a vector
-myDir <- getwd()
-featureList <- read.csv(paste(myDir, "Data", "features.txt", sep = "/"),
+myDir <- paste(getwd(), "Data", sep = "/")
+featureList <- read.csv(paste(myDir, "features.txt", sep = "/"),
                          header = FALSE, sep = " ",
                         col.names = c("ID", "Feature"),
                         stringsAsFactors = FALSE)
@@ -8,7 +12,7 @@ featureNames <- unlist(featureList$Feature)
 textWidth <- rep(16, times = 561)
 
 # Read the training data
-trainDir <- paste(myDir, "Data", "train", sep ="/")
+trainDir <- paste(myDir, "train", sep ="/")
 trainX <- read.fwf(paste(trainDir, "X_train.txt", sep = "/"),
                    widths = textWidth, header = FALSE,
                    sep = "\t", stringsAsFactors = FALSE,
@@ -23,7 +27,7 @@ trainActivity <- read.csv(paste(trainDir, "y_train.txt", sep = "/"),
                           col.names = c("Activity"))
 
 # Read the test data
-testDir <- paste(myDir, "Data", "test", sep ="/")
+testDir <- paste(myDir, "test", sep ="/")
 testX <- read.fwf(paste(testDir, "X_test.txt", sep = "/"),
                   widths = textWidth, header = FALSE,
                   sep = "\t", stringsAsFactors = FALSE,
@@ -63,29 +67,15 @@ studyResults$Activity <- factor(studyResults$Activity,
 # Convert subject to a factor
 studyResults$Subject <- factor(studyResults$Subject, levels = 1:30)
 
+# Create new data frame of means grouped by activity and subject
+meanResults <- ddply(studyResults, .(Subject, Activity), numcolwise(mean))
+
 # Save data frame as R Data file for future processing
-outFile <- paste(myDir, "Data", "StudyResults.RData", sep = "/")
-save(list = c("studyResults"), file = outFile)
+outFile <- paste(myDir, "StudyResults.RData", sep = "/")
+save(list = c("studyResults", "meanResults"),
+     file = outFile)
 
-# Clean up environment
-rm(trainDir)
-rm(trainSubject)
-rm(trainActivity)
-rm(trainX)
-rm(trainMean)
-rm(trainStd)
-rm(trainFinal)
-rm(testDir)
-rm(testSubject)
-rm(testActivity)
-rm(testX)
-rm(testMean)
-rm(testStd)
-rm(testFinal)
-rm(featureList)
-rm(featureNames)
-rm(textWidth)
-rm(myDir)
-rm(outFile)
-
+# Output grouped means to .txt file for project grading
+outFile <- paste(myDir, "KJNDataProject.txt", sep = "/")
+write.table(meanResults, outFile, row.name = FALSE)
 
