@@ -9,19 +9,14 @@ Subject
     Subject performing the activity numbered 1 - 30
 
 Activity    
-> Activity performed
->
-> WALKING
-
-> WALKING_UPSTAIRS
-
-> WALKING_DOWNSTAIRS
-
-> SITTING
-
-> STANDING
-
-> LAYING
+  Activity performed
+  
+  WALKING
+  WALKING_UPSTAIRS
+  WALKING_DOWNSTAIRS
+  SITTING
+  STANDING
+  LAYING
 
 
 tBodyAccMean-XYZ
