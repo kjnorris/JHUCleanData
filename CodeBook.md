@@ -84,8 +84,6 @@ output: pdf_document
 ### fBodyGyroJerkMag.mean
 
     Fast Fourier Transform of mean gyro Jerk Euclidean magnitude in each of the X, Y, and Z axes
-    
-------
 
 ### tBodyAcc.std-XYZ
 
@@ -143,14 +141,14 @@ output: pdf_document
 
     Fast Fourier Transform of standard deviation of  acceleration Euclidean magnitude in each of the X, Y, and Z axes
 
-### fBodyAccJerkMag.mean
+### fBodyAccJerkMag.std
 
-    Fast Fourier Transform of mean acceleration Jerk Euclidean magnitude in each of the X, Y, and Z axes
+    Fast Fourier Transform of standard deviation of  acceleration Jerk Euclidean magnitude in each of the X, Y, and Z axes
 
-### fBodyGyroMag.mean
+### fBodyGyroMag.std
 
-    Fast Fourier Transform of mean gyro Euclidean magnitude in each of the X, Y, and Z axes
+    Fast Fourier Transform of standard deviation of  gyro Euclidean magnitude in each of the X, Y, and Z axes
 
-### fBodyGyroJerkMag.mean
+### fBodyGyroJerkMag.std
 
-    Fast Fourier Transform of mean gyro Jerk Euclidean magnitude in each of the X, Y, and Z axes
+    Fast Fourier Transform of standard deviation of  gyro Jerk Euclidean magnitude in each of the X, Y, and Z axes
