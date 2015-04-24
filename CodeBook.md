@@ -8,21 +8,16 @@ output: pdf_document
 ### Subject     
     Subject performing the activity numbered 1 - 30
 
-### Activity    
+### Activity   
+
   Activity performed
   
-  WALKING
-  
-  WALKING_UPSTAIRS
-  
-  WALKING_DOWNSTAIRS
-  
-  SITTING
-  
-  STANDING
-  
-  LAYING
-
+    1. WALKING
+    2. WALKING_UPSTAIRS
+    3. WALKING_DOWNSTAIRS
+    4. SITTING
+    5. STANDING
+    6. LAYING
 
 ### tBodyAccMean-XYZ
 
