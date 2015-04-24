@@ -17,70 +17,140 @@ output: pdf_document
     5. STANDING
     6. LAYING
 
-### tBodyAccMean-XYZ
+### tBodyAcc.mean-XYZ
 
     Mean linear acceleration of the body in each of the X, Y, and Z axes
 
-### tGravityAccMean-XYZ
+### tGravityAcc.mean-XYZ
 
     Mean acceleration due to gravity on the body in each of the X, Y, and Z axes
 
-### tBodyAccJerkMean-XYZ
+### tBodyAccJerk.mean-XYZ
 
     Mean Jerk acceleration signals in each of the X, Y, and Z axes
 
-### tBodyGyroMean-XYZ
+### tBodyGyro.mean-XYZ
 
     Mean gyro signal in each of the X, Y, and Z axes
 
-### tBodyGyroJerkMean-XYZ
+### tBodyGyroJerk.mean-XYZ
 
     Mean Jerk gyro signal in each of the X, Y, and Z axes
 
-### tBodyAccMag-XYZ
+### tBodyAccMag.mean
 
     Mean acceleration Euclidean magnitude in each of the X, Y, and Z axes
 
-### tBodyGravityMag-XYZ
+### tBodyGravityMag.mean
 
     Mean gravity Euclidean magnitude in each of the X, Y, and Z axes
 
-### tBodyAccJerkMag-XYZ
+### tBodyAccJerkMag.mean
 
     Mean acceleration Jerk Euclidean magnitude in each of the X, Y, and Z axes
 
-### tBodyGyroMag-XYZ
+### tBodyGyroMag.mean
 
     Mean gyro Euclidean magnitude in each of the X, Y, and Z axes
 
-### tBodyGyroJerkMag-XYZ
+### tBodyGyroJerkMag.mean
 
     Mean gyro Jerk Euclidean magnitude in each of the X, Y, and Z axes
 
-### fBodyAccMean-XYZ
+### fBodyAcc.mean-XYZ
 
     Fast Fourier Transform of mean linear acceleration of the body in each of the X, Y, and Z axes
 
-### fBodyAccJerkMean-XYZ
+### fBodyAccJerk.mean-XYZ
 
     Fast Fourier Transform of mean Jerk acceleration signals in each of the X, Y, and Z axes
 
-### fBodyGyroMean-XYZ
+### fBodyGyro.mean-XYZ
 
     Fast Fourier Transform of mean gyro signal in each of the X, Y, and Z axes
 
-### fBodyAccMag-XYZ
+### fBodyAccMag.mean
 
     Fast Fourier Transform of mean acceleration Euclidean magnitude in each of the X, Y, and Z axes
 
-### fBodyAccJerkMag-XYZ
+### fBodyAccJerkMag.mean
 
     Fast Fourier Transform of mean acceleration Jerk Euclidean magnitude in each of the X, Y, and Z axes
 
-### fBodyGyroMag-XYZ
+### fBodyGyroMag.mean
 
     Fast Fourier Transform of mean gyro Euclidean magnitude in each of the X, Y, and Z axes
 
-### fBodyGyroJerkMag-XYZ
+### fBodyGyroJerkMag.mean
+
+    Fast Fourier Transform of mean gyro Jerk Euclidean magnitude in each of the X, Y, and Z axes
+    
+------
+
+### tBodyAcc.std-XYZ
+
+    Standard deviation of linear acceleration of the body in each of the X, Y, and Z axes
+
+### tGravityAcc.std-XYZ
+
+    Standard deviation of acceleration due to gravity on the body in each of the X, Y, and Z axes
+
+### tBodyAccJerk.std-XYZ
+
+    Standard deviation of Jerk acceleration signals in each of the X, Y, and Z axes
+
+### tBodyGyro.std-XYZ
+
+    Standard deviation of gyro signal in each of the X, Y, and Z axes
+
+### tBodyGyroJerk.std-XYZ
+
+    Standard deviation of Jerk gyro signal in each of the X, Y, and Z axes
+
+### tBodyAccMag.std
+
+    Standard deviation of acceleration Euclidean magnitude in each of the X, Y, and Z axes
+
+### tBodyGravityMag.std
+
+    Standard deviation of gravity Euclidean magnitude in each of the X, Y, and Z axes
+
+### tBodyAccJerkMag.std
+
+    Standard deviation of acceleration Jerk Euclidean magnitude in each of the X, Y, and Z axes
+
+### tBodyGyroMag.std
+
+    Standard deviation of gyro Euclidean magnitude in each of the X, Y, and Z axes
+
+### tBodyGyroJerkMag.std
+
+    Standard deviation of gyro Jerk Euclidean magnitude in each of the X, Y, and Z axes
+
+### fBodyAcc.std-XYZ
+
+    Fast Fourier Transform of standard deviation of linear acceleration of the body in each of the X, Y, and Z axes
+
+### fBodyAccJerk.std-XYZ
+
+    Fast Fourier Transform of standard deviation of  Jerk acceleration signals in each of the X, Y, and Z axes
+
+### fBodyGyro.std-XYZ
+
+    Fast Fourier Transform of standard deviation of  gyro signal in each of the X, Y, and Z axes
+
+### fBodyAccMag.std
+
+    Fast Fourier Transform of standard deviation of  acceleration Euclidean magnitude in each of the X, Y, and Z axes
+
+### fBodyAccJerkMag.mean
+
+    Fast Fourier Transform of mean acceleration Jerk Euclidean magnitude in each of the X, Y, and Z axes
+
+### fBodyGyroMag.mean
+
+    Fast Fourier Transform of mean gyro Euclidean magnitude in each of the X, Y, and Z axes
+
+### fBodyGyroJerkMag.mean
 
     Fast Fourier Transform of mean gyro Jerk Euclidean magnitude in each of the X, Y, and Z axes
