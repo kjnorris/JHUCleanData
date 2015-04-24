@@ -12,11 +12,17 @@ Activity
 > Activity performed
 >
 > WALKING
+
 > WALKING_UPSTAIRS
+
 > WALKING_DOWNSTAIRS
+
 > SITTING
+
 > STANDING
+
 > LAYING
+
 
 tBodyAccMean-XYZ
     Mean linear acceleration of the body in each of the X, Y, and Z axes
