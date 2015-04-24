@@ -9,8 +9,6 @@ output: pdf_document
     Subject performing the activity numbered 1 - 30
 
 ### Activity   
-
-  Activity performed
   
     1. WALKING
     2. WALKING_UPSTAIRS
